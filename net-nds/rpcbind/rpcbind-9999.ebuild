@@ -6,7 +6,7 @@ EAPI=7
 inherit systemd
 
 if [[ ${PV} == "9999" ]] ; then
-	EGIT_REPO_URI="git://linux-nfs.org/~steved/rpcbind.git"
+	EGIT_REPO_URI="git://git.linux-nfs.org/projects/steved/rpcbind.git"
 	inherit autotools git-r3
 else
 	SRC_URI="mirror://sourceforge/${PN}/${P}.tar.bz2"
